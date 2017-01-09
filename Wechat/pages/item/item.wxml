@@ -1,12 +1,8 @@
 <view class="page">
   <form bindsubmit="formSubmit" bindreset="formReset">
-    <view class="page__hd">
-      <text class="page__title">明天我将这样度过</text>
-      <text class="page__desc"></text>
-    </view>
     <view class="page__bd">
-      <view class="section">
-        <input name="title" placeholder="明天准备如何度过？" auto-focus/>
+      <view class="section" style="margin-top: 20px;">
+        <input name="title" placeholder="我的今天应当这样度过" auto-focus/>
       </view>
       <view class="section">
         <view class="section__title">开始时间</view>
@@ -27,10 +23,7 @@
     </view>
     <view class="btn-area" id="buttonContainer">
       <view class="button-wrapper">
-        <button type="primary" form-type="submit">Submit</button>
-      </view>
-      <view class="button-wrapper">
-        <button type="primary" form-type="reset">Reset</button>
+        <button type="primary" form-type="submit">确定一定以及肯定</button>
       </view>
     </view>
   </form>

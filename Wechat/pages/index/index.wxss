@@ -1,12 +1,4 @@
 /**index.wxss**/
-scroll-view {
-  width: auto;
-  max-height: 300px;
-
-  color: #888888;
-  margin: 15px 0;
-}
-
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -16,21 +8,17 @@ scroll-view {
 .userinfo-avatar {
   width: 128rpx;
   height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+  border-radius: 128rpx;
 }
 
 .userinfo-nickname {
-  color: #aaa;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  font-size: 38rpx;
 }
 
 .sub-title {
   color: #000000;
-}
-
-.create-new-item-button {
-  background-color: #09BB07;
-  color: #FFF;
 }
 
 .swiper-item{
@@ -38,6 +26,7 @@ scroll-view {
     align-items: center;
     justify-content: center;
     height: 150px;
+    background-color: #f9f9f9;
 }
 
 .page_bd {
