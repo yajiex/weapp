@@ -1,0 +1,25 @@
+
+<!--index.wxml-->
+<view class="container">
+  <view bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <text class="sub-title">再一次思索人生的意义</text>
+  </view>
+  <view class="page_bd">
+    <view class="section section_gap swiper">
+      <swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+        <block wx:for="{{plans}}">
+          <swiper-item>
+            <view class="swiper-item">
+              {{item.title}}: {{item.startTime}} - {{item.endTime}}
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="create-new-item">
+      <button class="create-new-item-button" bindtap="bindCreateNewItem">新建事项</button>
+    </view>
+  </view>
+</view>

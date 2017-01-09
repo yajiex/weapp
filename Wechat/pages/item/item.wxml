@@ -1,0 +1,37 @@
+<view class="page">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="page__hd">
+      <text class="page__title">明天我将这样度过</text>
+      <text class="page__desc"></text>
+    </view>
+    <view class="page__bd">
+      <view class="section">
+        <input name="title" placeholder="明天准备如何度过？" auto-focus/>
+      </view>
+      <view class="section">
+        <view class="section__title">开始时间</view>
+        <picker name="startTime" value="{{startTime}}" mode="time" bindchange="startTimeChange">
+          <view class="picker">
+            当前选择: {{startTime}}
+          </view>
+        </picker>
+      </view>
+      <view class="section">
+        <view class="section__title">结束时间</view>
+        <picker name="endTime" value="{{endTime}}" mode="time" bindchange="endTimeChange">
+          <view class="picker">
+            当前选择: {{endTime}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="btn-area" id="buttonContainer">
+      <view class="button-wrapper">
+        <button type="primary" form-type="submit">Submit</button>
+      </view>
+      <view class="button-wrapper">
+        <button type="primary" form-type="reset">Reset</button>
+      </view>
+    </view>
+  </form>
+</view>
